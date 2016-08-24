@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="tstarpro-bold_mod.ttf">
+            <string>TSTARMOD-Bold</string>
+            <string>TSTARMOD-Bold</string>
+            <string>TSTARMOD-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IQKeyboardManager_617_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="83" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EBu-Im-EEZ">
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="VariantCell" rowHeight="76" id="0Mr-ut-gRA">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="76"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0Mr-ut-gRA" id="h0v-Mq-x9G">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="75.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CYO-71-3b1">
+                                                    <rect key="frame" x="30" y="8" width="143" height="23"/>
+                                                    <fontDescription key="fontDescription" name="TSTARMOD-Bold" family="TSTAR MOD" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                                </textField>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEh-2n-anI">
+                                                    <rect key="frame" x="266" y="-2.5" width="38" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="fqr-Yr-SrT"/>
+                                                        <constraint firstAttribute="width" constant="38" id="wgZ-l6-8ju"/>
+                                                    </constraints>
+                                                    <state key="normal" image="delete16"/>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPa-P6-5dN">
+                                                    <rect key="frame" x="30" y="39" width="32" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="32" id="qAL-AC-MCf"/>
+                                                        <constraint firstAttribute="height" constant="44" id="tnU-j1-pDt"/>
+                                                    </constraints>
+                                                    <state key="normal" image="uncheck"/>
+                                                    <state key="selected" image="check"/>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEFAULT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Axh-dv-vaG">
+                                                    <rect key="frame" x="70" y="54" width="51" height="14"/>
+                                                    <fontDescription key="fontDescription" name="TSTARMOD-Bold" family="TSTAR MOD" pointSize="12"/>
+                                                    <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="kr." textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UAz-F7-BI7">
+                                                    <rect key="frame" x="181" y="8" width="80" height="23"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="4Vs-jO-NKv"/>
+                                                    </constraints>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="TSTARMOD-Bold" family="TSTAR MOD" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="gEh-2n-anI" firstAttribute="centerY" secondItem="CYO-71-3b1" secondAttribute="centerY" id="2v6-ec-U4W"/>
+                                                <constraint firstItem="UAz-F7-BI7" firstAttribute="top" secondItem="h0v-Mq-x9G" secondAttribute="top" constant="8" id="5Nx-Wp-4zK"/>
+                                                <constraint firstItem="gPa-P6-5dN" firstAttribute="leading" secondItem="h0v-Mq-x9G" secondAttribute="leading" constant="30" id="7DP-zD-8Po"/>
+                                                <constraint firstItem="UAz-F7-BI7" firstAttribute="centerY" secondItem="CYO-71-3b1" secondAttribute="centerY" id="DkZ-D2-h1a"/>
+                                                <constraint firstItem="gPa-P6-5dN" firstAttribute="top" secondItem="CYO-71-3b1" secondAttribute="bottom" constant="8" id="GTC-EJ-LVq"/>
+                                                <constraint firstItem="CYO-71-3b1" firstAttribute="leading" secondItem="h0v-Mq-x9G" secondAttribute="leading" constant="30" id="LdU-Wa-2Mt"/>
+                                                <constraint firstAttribute="trailing" secondItem="gEh-2n-anI" secondAttribute="trailing" constant="16" id="MVM-Gy-PRF"/>
+                                                <constraint firstItem="Axh-dv-vaG" firstAttribute="centerY" secondItem="gPa-P6-5dN" secondAttribute="centerY" id="RBf-j8-WKu"/>
+                                                <constraint firstItem="gEh-2n-anI" firstAttribute="leading" secondItem="UAz-F7-BI7" secondAttribute="trailing" constant="5" id="VsQ-nf-xza"/>
+                                                <constraint firstItem="CYO-71-3b1" firstAttribute="top" secondItem="h0v-Mq-x9G" secondAttribute="top" constant="8" id="ocF-oV-4Ba"/>
+                                                <constraint firstItem="Axh-dv-vaG" firstAttribute="leading" secondItem="gPa-P6-5dN" secondAttribute="trailing" constant="8" id="rFY-fI-k0q"/>
+                                                <constraint firstItem="UAz-F7-BI7" firstAttribute="leading" secondItem="CYO-71-3b1" secondAttribute="trailing" constant="8" id="sZo-bF-nsA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="pbD-IV-nOk"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="2Mu-R7-BHL"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EBu-Im-EEZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FfX-8y-Sbq"/>
+                            <constraint firstItem="EBu-Im-EEZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="Rsg-cn-cqg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EBu-Im-EEZ" secondAttribute="bottom" id="fIg-6u-g6o"/>
+                            <constraint firstAttribute="trailing" secondItem="EBu-Im-EEZ" secondAttribute="trailing" id="nO0-zN-mOw"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="175" y="200"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="check" width="16" height="16"/>
+        <image name="delete16" width="16" height="16"/>
+        <image name="uncheck" width="16" height="16"/>
+    </resources>
+</document>

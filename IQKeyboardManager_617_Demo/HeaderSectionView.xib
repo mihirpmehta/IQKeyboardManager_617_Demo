@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="tstarpro-bold_mod.ttf">
+            <string>TSTARMOD-Bold</string>
+            <string>TSTARMOD-Bold</string>
+            <string>TSTARMOD-Bold</string>
+            <string>TSTARMOD-Bold</string>
+            <string>TSTARMOD-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="83"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Options group name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="olQ-6Y-9zT">
+                    <rect key="frame" x="30" y="8" width="261" height="24"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="TSTARMOD-Bold" family="TSTAR MOD" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tn-TI-SB0">
+                    <rect key="frame" x="321" y="-2.5" width="38" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="38" id="khi-ko-QH9"/>
+                        <constraint firstAttribute="height" constant="44" id="vJM-wf-GWD"/>
+                    </constraints>
+                    <state key="normal" image="delete16"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIN." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="053-VN-ZX3">
+                    <rect key="frame" x="30" y="48" width="26" height="14"/>
+                    <fontDescription key="fontDescription" name="TSTARMOD-Bold" family="TSTAR MOD" pointSize="12"/>
+                    <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="103" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAX." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bwr-Vf-yYz">
+                    <rect key="frame" x="114" y="48" width="29" height="14"/>
+                    <fontDescription key="fontDescription" name="TSTARMOD-Bold" family="TSTAR MOD" pointSize="12"/>
+                    <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KEM-HG-THB">
+                    <rect key="frame" x="64" y="48" width="20" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="gMo-3L-YKW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="TSTARMOD-Bold" family="TSTAR MOD" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kW3-Vf-LCG">
+                    <rect key="frame" x="151" y="48" width="20" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="Cka-cg-KCt"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="xfo-tD-ZPh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="TSTARMOD-Bold" family="TSTAR MOD" pointSize="16"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1fr-Cq-Mts">
+                    <rect key="frame" x="0.0" y="81" width="375" height="2"/>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="55K-Lk-jtY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="2tn-TI-SB0" firstAttribute="centerY" secondItem="olQ-6Y-9zT" secondAttribute="centerY" id="ACh-2l-Wo3"/>
+                <constraint firstItem="053-VN-ZX3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="Bs6-6u-pIF"/>
+                <constraint firstAttribute="bottom" secondItem="1fr-Cq-Mts" secondAttribute="bottom" id="DaK-uV-cdD"/>
+                <constraint firstItem="Bwr-Vf-yYz" firstAttribute="leading" secondItem="KEM-HG-THB" secondAttribute="trailing" constant="30" id="Fbf-8r-xz6"/>
+                <constraint firstItem="kW3-Vf-LCG" firstAttribute="leading" secondItem="Bwr-Vf-yYz" secondAttribute="trailing" constant="8" id="HVn-kL-rEx"/>
+                <constraint firstItem="Bwr-Vf-yYz" firstAttribute="top" secondItem="olQ-6Y-9zT" secondAttribute="bottom" constant="16" id="He7-BM-9nf"/>
+                <constraint firstItem="kW3-Vf-LCG" firstAttribute="top" secondItem="olQ-6Y-9zT" secondAttribute="bottom" constant="16" id="Mws-2q-mcR"/>
+                <constraint firstItem="1fr-Cq-Mts" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="OtZ-ut-Hvh"/>
+                <constraint firstItem="olQ-6Y-9zT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="P6I-rF-QIO"/>
+                <constraint firstItem="olQ-6Y-9zT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Sis-Oc-tre"/>
+                <constraint firstItem="1fr-Cq-Mts" firstAttribute="leading" secondItem="KEM-HG-THB" secondAttribute="trailing" id="Unp-6z-PJA"/>
+                <constraint firstItem="KEM-HG-THB" firstAttribute="top" secondItem="olQ-6Y-9zT" secondAttribute="bottom" constant="16" id="WdT-Mu-cCT"/>
+                <constraint firstAttribute="trailing" secondItem="2tn-TI-SB0" secondAttribute="trailing" constant="16" id="asA-Hu-UvR"/>
+                <constraint firstAttribute="trailing" secondItem="1fr-Cq-Mts" secondAttribute="trailing" id="fth-tq-z0j"/>
+                <constraint firstItem="2tn-TI-SB0" firstAttribute="leading" secondItem="olQ-6Y-9zT" secondAttribute="trailing" constant="30" id="hT7-nC-Fhu"/>
+                <constraint firstItem="KEM-HG-THB" firstAttribute="leading" secondItem="053-VN-ZX3" secondAttribute="trailing" constant="8" id="pHi-Jd-LLB"/>
+                <constraint firstItem="053-VN-ZX3" firstAttribute="top" secondItem="olQ-6Y-9zT" secondAttribute="bottom" constant="16" id="zIA-oe-I6j"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Unp-6z-PJA"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="211.5" y="68.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="delete16" width="16" height="16"/>
+    </resources>
+</document>
